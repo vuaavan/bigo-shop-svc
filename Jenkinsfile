@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = "my-shop-service" // Change to your Docker image name
+        DOCKER_IMAGE_NAME = "shop" // Change to your Docker image name
         DOCKER_CONTAINER_NAME = "shop" // Change to your Docker container name
         DOCKER_PORT_MAPPING = "8080:8080" // Adjust if needed
     }
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the latest code from your Git repository
-                git 'https://your-git-repo-url.git'
+                git 'https://github.com/vuaavan/bigo-shop-svc.git'
             }
         }
 
