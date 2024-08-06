@@ -20,7 +20,7 @@ router.get("/dishes/:id", async (req, res) => {
     if (dish) {
       res.json(dish)
     } else {
-      res.status(404).json({ error: "Dish not found" })
+      res.status(404).json({ error: "Dish not founddđ" })
     }
   } catch (err) {
     res.status(500).json({ error: err.message })
