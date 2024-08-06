@@ -5,7 +5,7 @@ const { sequelize } = require("./models")
 const dishRoutes = require("./routes/dishRoutes")
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 
 app.use(morgan("dev"))
 app.use(express.json())
